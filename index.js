@@ -13,7 +13,7 @@ const countLikes2 = document.getElementById("countLikes2")
 
 function hitLikes2() {
   let totalLikes2 = parseInt(countLikes2.value) + 1
-  count2.textContent = totalLikes2.toString()
+  countLikes2.textContent = totalLikes2.toString()
 }
 
 btnLike2.addEventListener("click", hitLike2)
