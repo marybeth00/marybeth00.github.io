@@ -1,11 +1,11 @@
-const btnLike1 = document.getElementById("btnLike1")
-const btnLike2 = document.getElementById("btnLike2")
+const btnLikes1 = document.getElementById("btnLike1")
+const btnLikes2 = document.getElementById("btnLike2")
 
 const countLikes1 = document.getElementById("countLikes1")
 const countLikes2 = document.getElementById("countLikes2")
 
-const btnDislike1 = document.getElementById("btnDislike1")
-const btnDislike2 = document.getElementById("btnDislike2")
+const btnDislikes1 = document.getElementById("btnDislike1")
+const btnDislikes2 = document.getElementById("btnDislike2")
 
 const countDislikes1 = document.getElementById("countDislike1")
 const countDislikes2 = document.getElementById("countDislike2")
