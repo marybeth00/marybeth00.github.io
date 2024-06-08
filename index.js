@@ -5,7 +5,7 @@ const countLikes1 = document.getElementById("countLikes1")
 const countLikes2 = document.getElementById("countLikes2")
 
 const btnDislike1 = document.getElementById("btnDislikes1")
-const btnDislike2 = document.getElementById("btnDislike2")
+const btnDislike2 = document.getElementById("btnDislikes2")
 
 const countDislikes1 = document.getElementById("countDislikes1")
 const countDislikes2 = document.getElementById("countDislikes2")
