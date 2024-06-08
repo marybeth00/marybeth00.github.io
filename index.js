@@ -27,13 +27,13 @@ function hitDisLikes1() {
   let totalDisLikes1 = parseInt(countDisLikes1.value) + 1
    countDisLikes1.textContent = totalDisLikes1.toString()
 }
-btnDisLike1.addEventListener("click",DisLikes1)
+btnDisLike1.addEventListener("click",hitDisLikes1)
 
 function hitDisLikes2() {
   let totalDisLikes2 = parseInt(countDisLikes2.value) + 1
    countDisLikes2.textContent = totalDisLikes2.toString()
 }
-btnDisLike2.addEventListener("click",DisLikes2)
+btnDisLike2.addEventListener("click",hitDisLikes2)
 
 
 const comment = document.getElementById("comment")
