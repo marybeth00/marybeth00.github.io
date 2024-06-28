@@ -1,47 +1,29 @@
-const btnLike1 = document.getElementById("btnLike1")
-const btnLike2 = document.getElementById("btnLike2")
+document.addEventListener('DOMContentLoaded', () => {
+    const quantityInputs = document.querySelectorAll('input[type="number"]');
+    const totalDisplay = document.querySelector('.order-summary p:nth-child(1)');
+    const cashInput = document.querySelector('.order-summary input[type="number"]');
+    const changeDisplay = document.querySelector('.order-summary p:nth-child(3)');
 
-const countLikes1 = document.getElementById("countLikes1")
-const countLikes2 = document.getElementById("countLikes2")
+    quantityInputs.forEach(input => {
+        input.addEventListener('input', calculateTotal);
+    });
 
-const btnDisLike1 = document.getElementById("btnDisLike1")
-const btnDisLike2 = document.getElementById("btnDisLike2")
+    cashInput.addEventListener('input', calculateChange);
 
-const countDisLikes1 = document.getElementById("countDisLikes1")
-const countDisLikes2 = document.getElementById("countDisLikes2")
+    function calculateTotal() {
+        let total = 0;
+        quantityInputs.forEach(input => {
+            const price = parseFloat(input.previousElementSibling.textContent);
+            const quantity = parseInt(input.value) || 0;
+            total += price * quantity;
+        });
+        totalDisplay.textContent = `Total: ${total.toFixed(2)}`;
+        calculateChange();
+    }
 
-
-function hitLikes1() {
-   let totalLikes1 = parseInt(countLikes1.value) + 1
-   countLikes1.textContent = totalLikes1.toString()
-}
-btnLike1.addEventListener("click",hitLikes1)
-
-function hitLikes2() {
-   let totalLikes2 = parseInt(countLikes1.value) + 1
-   countLikes2.textContent = totalLikes2.toString() 
-} 
-btnLike2.addEventListener("click",hitLikes2)
-
-function hitDisLikes1() {
-  let totalDisLikes1 = parseInt(countDisLikes1.value) + 1
-   countDisLikes1.textContent = totalDisLikes1.toString()
-}
-btnDisLike1.addEventListener("click",hitDisLikes1)
-
-function hitDisLikes2() {
-  let totalDisLikes2 = parseInt(countDisLikes2.value) + 1
-   countDisLikes2.textContent = totalDisLikes2.toString()
-}
-btnDisLike2.addEventListener("click",hitDisLikes2)
-
-
-const comment = document.getElementById("comment")
-const submit = document.getElementById("submit")
-const commentbox = document.getElementById("commentbox")
-
-function submitComment() {
-   commentbox.textContent += comment.value.toString() + "\n"
-   comment.value="";
-}
-submit.addEventListener("click",submitComment)
+    function calculateChange() {
+        const total = parseFloat(totalDisplay.textContent.replace('Total: ', ''));
+        const cashTendered = parseFloat(cashInput.value) || 0;
+        const change = cashTendered - total;
+        changeDisplay.textContent = `Change: ${change.toFixed(2)}`;
+    }
