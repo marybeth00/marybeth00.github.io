@@ -1,63 +1,78 @@
 <!DOCTYPE html>
-    <title> My Homepage </title>
-    <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </head>
-    <body> 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Mary's Shoes Store</h2>
-                    <hr class="hr" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4 text-center">
-                    <label id="product1"> Nike SB Dunk </label>
-                    <img src="images (7).jpeg" class="img-thumbnail" style="width:400px;height:400px;"/> <br>
-                    <label for="product1" id="price1">10,000</label>
-                    <input type="number" class="form-control" id="qty1" placeholder="Enter quantity"/><br>
-                </div>
-                <div class="col-4 text-center">
-                    <label id="product2">  Air Jordan </label>
-                    <img src="images (9).jpeg" class="img-thumbnail" style="width:400px;height:400px;"/> <br>
-                    <label for="product2" id="price2"> 13,500</label>
-                    <input type="number" class="form-control" id="qty2" placeholder="Enter quantity"/><br>
-                </div>
-                <div class="col-4 text-center">
-                    <label id="product3">  Air Jordan Tatum </label>
-                    <img src="images (10).jpeg" class="img-thumbnail" style="width:400px;height:400px;"/> <br>
-                    <label for="product3" id="price3"> 11,000</label>
-                    <input type="number" class="form-control" id="qty3" placeholder="Enter quantity"/><br>
-                </div>
-                <div class="col-4 text-center">
-                    <label id="product4">  Adidas Samba OG </label>
-                    <img src="images (11).jpeg" class="img-thumbnail" style="width:400px;height:400px;"/> <br>
-                    <label for="product4" id="price4"> 6,800</label>
-                    <input type="number" class="form-control" id="qty4" placeholder="Enter quantity"/><br>
-                </div>
-                <div class="col-4 text-center">
-                    <label id="product5"> Vans Old Skool </label>
-                    <img src="images (12).jpeg" class="img-thumbnail" style="width:400px;height:400px;"/> <br>
-                    <label for="product5" id="price5"> 3,500</label>
-                    <input type="number" class="form-control" id="qty5" placeholder="Enter quantity"/><br>
-                </div>
-                <div class="col-4 text-center">
-                    <label id="product6"> Air Jordan 1 Elevate Low </label>
-                    <img src="images (13).jpeg" class="img-thumbnail" style="width:400px;height:400px;"/> <br>
-                    <label for="product6" id="price6"> 5,000</label>
-                    <input type="number" class="form-control" id="qty6" placeholder="Enter quantity"/><br>
-                </div>
-                <div class="col-4">
-                    <label for="carts"> Orders </label<br>
-                    <textarea class="form-control" rows="29" id="carts" cols="200" readonly style="width:350px;height:400;font-size:12px;"> </textarea>
-                    <input type="text" class="form-control border-0" id="total" readonly placeholder="Total"/>
-                    <input type="number" class="form-control" id="cash" placeholder="Cash Tendered"/>
-                    <input type="text" class ="form-control border-0" id="change" readonly placeholder="Change"/>
-                </div>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2>Mary's Shoes Store</h2>
+                <hr class="hr" />
             </div>
         </div>
-        <script src="app.js"></script>
-    </body>
-</html>
+        <div class="row">
+            <div class="col-4 text-center">
+                <label id="product1">Nike SB Dunk</label>
+                <img src="images (7).jpeg" class="img-thumbnail" style="width:400px;height:400px;" alt="Nike SB Dunk"/>
+                <br>
+                <label for="product1" id="price1">10,000</label>
+                <input type="number" class="form-control" id="qty1" placeholder="Enter quantity"/>
+                <br>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product2">Air Jordan</label>
+                <img src="images (9).jpeg" class="img-thumbnail" style="width:400px;height:400px;" alt="Air Jordan"/>
+                <br>
+                <label for="product2" id="price2">13,500</label>
+                <input type="number" class="form-control" id="qty2" placeholder="Enter quantity"/>
+                <br>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product3">Air Jordan Tatum</label>
+                <img src="images (10).jpeg" class="img-thumbnail" style="width:400px;height:400px;" alt="Air Jordan Tatum"/>
+                <br>
+                <label for="product3" id="price3">11,000</label>
+                <input type="number" class="form-control" id="qty3" placeholder="Enter quantity"/>
+                <br>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product4">Adidas Samba OG</label>
+                <img src="images (11).jpeg" class="img-thumbnail" style="width:400px;height:400px;" alt="Adidas Samba OG"/>
+                <br>
+                <label for="product4" id="price4">6,800</label>
+                <input type="number" class="form-control" id="qty4" placeholder="Enter quantity"/>
+                <br>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product5">Vans Old Skool</label>
+                <img src="images (12).jpeg" class="img-thumbnail" style="width:400px;height:400px;" alt="Vans Old Skool"/>
+                <br>
+                <label for="product5" id="price5">3,500</label>
+                <input type="number" class="form-control" id="qty5" placeholder="Enter quantity"/>
+                <br>
+            </div>
+            <div class="col-4 text-center">
+                <label id="product6">Air Jordan 1 Elevate Low</label>
+                <img src="images (13).jpeg" class="img-thumbnail" style="width:400px;height:400px;" alt="Air Jordan 1 Elevate Low"/>
+                <br>
+                <label for="product6" id="price6">5,000</label>
+                <input type="number" class="form-control" id="qty6" placeholder="Enter quantity"/>
+                <br>
+            </div>
+            <div class="col-4">
+                <label for="carts">Orders</label>
+                <textarea class="form-control" rows="29" id="carts" cols="200" readonly style="width:350px;height:400px;font-size:12px;"></textarea>
+                <input type="text" class="form-control border-0" id="total" readonly placeholder="Total"/>
+                <input type="number" class="form-control" id="cash" placeholder="Cash Tendered"/>
+                <input type="text" class="form-control border-0" id="change" readonly placeholder="Change"/>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+    </html>
