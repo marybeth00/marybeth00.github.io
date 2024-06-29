@@ -1,29 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const quantityInputs = document.querySelectorAll('input[type="number"]');
-    const totalDisplay = document.querySelector('.order-summary p:nth-child(1)');
-    const cashInput = document.querySelector('.order-summary input[type="number"]');
-    const changeDisplay = document.querySelector('.order-summary p:nth-child(3)');
+var product1 = document.getElementById("product1")
+var qty1 = document.getElementById("qty1")
+var price1 = document.getElementById("price1")
 
-    quantityInputs.forEach(input => {
-        input.addEventListener('input', calculateTotal);
-    });
+var product2 = document.getElementById("product2")
+var qty2 = document.getElementById("qty2")
+var price2 = document.getElementById("price2")
 
-    cashInput.addEventListener('input', calculateChange);
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
 
-    function calculateTotal() {
-        let total = 0;
-        quantityInputs.forEach(input => {
-            const price = parseFloat(input.previousElementSibling.textContent);
-            const quantity = parseInt(input.value) || 0;
-            total += price * quantity;
-        });
-        totalDisplay.textContent = `Total: ${total.toFixed(2)}`;
-        calculateChange();
+function addOrder() {
+    cart.textContent=""
+    if (parseFloat(qty1.value) > 0){
+        var order= qty1.value.toString() + ' pc/s × '+ price1.textContent + '------'+ product1
+.textContent + '------ Php' + (parseFloat(qty1.value,)*parseFloat(price1.textContent)) + '/n'
+        //carts.textContent += carts.value.toString() + "/n";
+    carts.textContent += order
     }
+    if (parseFloat(qty2.value) > 0){
+        var order= qty2.value.toString() + ' pc/s × '+ price2.textContent + '------'+ product2
+.textContent + '------ Php' + (parseFloat(qty2.value,)*parseFloat(price2.textContent)) + '/n'
+    }   
 
-    function calculateChange() {
-        const total = parseFloat(totalDisplay.textContent.replace('Total: ', ''));
-        const cashTendered = parseFloat(cashInput.value) || 0;
-        const change = cashTendered - total;
-        changeDisplay.textContent = `Change: ${change.toFixed(2)}`;
-    }
+}
+qty1.addEvenListener("keyup", addOrder);
+qty2.addEvenListener(keyup", addOrder);
