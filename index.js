@@ -32,19 +32,19 @@ function addOrder(){
     if (parseFloat(qty1.value) > 0){
         var order= qty1.value.toString() + ' pc/s × '+ price1.textContent + '------'+ product1
 .textContent + '------ Php' + (parseFloat(qty1.value,)*parseFloat(price1.textContent)) + '\n'
-        carts.textContent += carts.value.toString() + "\n";
+        \\carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
     }
     if (parseFloat(qty2.value) > 0){
         var order= qty2.value.toString() + ' pc/s × '+ price2.textContent + '------'+ product2
 .textContent + '------ Php' + (parseFloat(qty2.value,)*parseFloat(price2.textContent)) + '\n'
-        carts.textContent += carts.value.toString() + "\n";
+       \\carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
     }   
 if (parseFloat(qty3.value) > 0){
         var order= qty3.value.toString() + ' pc/s × '+ price3.textContent + '------'+ product3
 .textContent + '------ Php' + (parseFloat(qty3.value,)*parseFloat(price3.textContent)) + '\n'
-    carts.textContent += carts.value.toString() + "\n";
+    \\carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
    }  
 if (parseFloat(qty4.value) > 0){
@@ -56,13 +56,13 @@ if (parseFloat(qty4.value) > 0){
 if (parseFloat(qty5.value) > 0){
         var order= qty5.value.toString() + ' pc/s × '+ price5.textContent + '------'+ product5
 .textContent + '------ Php' + (parseFloat(qty5.value,)*parseFloat(price5.textContent)) + '\n'
-    carts.textContent += carts.value.toString() + "\n";
+    \\carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
      }   
 if (parseFloat(qty6.value) > 0){
         var order= qty6.value.toString() + ' pc/s × '+ price6.textContent + '------'+ product6
 .textContent + '------ Php' + (parseFloat(qty6.value,)*parseFloat(price6.textContent)) + '\n'
-    carts.textContent += carts.value.toString() + "\n";
+    \\carts.textContent += carts.value.toString() + "\n";
     carts.textContent += order
     }   
     
