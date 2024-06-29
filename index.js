@@ -65,7 +65,7 @@ function addOrder() {
 
     total.value = totalAmount.toFixed(2);
 
-  
+    // Update change
     updateChange();
 }
 
@@ -76,11 +76,4 @@ function updateChange() {
     change.value = changeAmount.toFixed(2);
 }
 
-// Add event listeners to quantity inputs and cash input
-qty1.addEventListener("input", addOrder);
-qty2.addEventListener("input", addOrder);
-qty3.addEventListener("input", addOrder);
-qty4.addEventListener("input", addOrder);
-qty5.addEventListener("input", addOrder);
-qty6.addEventListener("input", addOrder);
-cash.addEventListener("input", updateChange);
+// Add event listeners to quantity inputs
