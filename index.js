@@ -68,8 +68,8 @@ if (parseFloat(qty6.value) > 0){
     
 }
 qty1.addEvenListener("keyup", addOrder);
-qty2.addEvenListener(keyup", addOrder);
-qty3.addEvenListener(keyup", addOrder);
+qty2.addEvenListener("keyup", addOrder);
+qty3.addEvenListener("keyup", addOrder);
 qty4.addEvenListener("keyup", addOrder);
 qty5.addEvenListener("keyup", addOrder);
 qty6.addEvenListener("keyup", addOrder);
